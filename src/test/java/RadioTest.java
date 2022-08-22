@@ -127,9 +127,9 @@ public class RadioTest {
 
     @Test
     public void shouleSetStation() {
-        Radio radio = new Radio();
-        radio.setCurrentStation(7);
-        int expected = 7;
+        Radio radio = new Radio(20);
+        radio.setCurrentStation(15);
+        int expected = 15;
         int actual = radio.getCurrentStation();
         assertEquals(expected, actual);
 
